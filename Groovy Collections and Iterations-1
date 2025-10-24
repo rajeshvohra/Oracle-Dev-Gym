@@ -1,0 +1,16 @@
+2. Collections and Iteration
+Topics: Lists, Maps, Ranges, Loops
+Question:
+def nums = [1,2,3,4]
+nums.each { it -> println it * 2 }
+What does this code print?
+
+A) 2 4 6 8
+
+B) 1 2 3 4
+
+C) 1 4 9 16
+
+D) 4 8 12 16
+
+Answer: A) 2 4 6 8
