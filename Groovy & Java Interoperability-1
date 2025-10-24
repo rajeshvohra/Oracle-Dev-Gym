@@ -1,0 +1,13 @@
+Topics: Calling Java classes, using Java APIs in Groovy
+Question:
+Which of the following is valid Groovy code to create a Java ArrayList?
+
+A) def list = new java.util.ArrayList() 
+
+B) ArrayList list = []
+
+C) def list = ArrayList.of()
+
+D) list = ArrayList[]
+
+Answer: A) def list = new java.util.ArrayList()
