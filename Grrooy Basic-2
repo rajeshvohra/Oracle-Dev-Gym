@@ -1,0 +1,115 @@
+Question: Which of the following is NOT a Groovy collection type?
+
+A) List
+
+B) Map
+
+C) Set
+
+D) Queue 
+
+Answer: D) Queue
+
+Question 4:
+What is the output of:
+
+def name = null
+println name ?: "Default"
+
+
+A) null
+
+B) ""
+
+C) "Default" 
+
+D) Error
+
+Answer: C) "Default"
+
+Question 5:
+Which symbol is used for string interpolation in Groovy?
+
+A) $ 
+
+B) #
+
+C) @
+
+D) %
+
+Answer: A) $
+
+Question 6:
+How do you define a closure in Groovy?
+
+A) { println "Hello" } 
+
+B) def closure = func()
+
+C) def closure = function {}
+
+D) (x) -> println x
+
+Answer: A) { println "Hello" }
+
+Question 7:
+What is the result of:
+
+println [1,2,3].collect { it * 2 }
+
+
+A) [2, 4, 6] 
+
+B) 1 2 3
+
+C) [1,4,9]
+
+D) Error
+
+Answer: A) [2, 4, 6]
+
+Question 8:
+Which of these is a valid way to create a list in Groovy?
+
+A) def list = [1,2,3] 
+
+B) def list = (1,2,3)
+
+C) def list = List(1,2,3)
+
+D) def list = new ArrayList[1,2,3]
+
+Answer: A) def list = [1,2,3]
+
+Question 9:
+What does the ?. operator do in Groovy?
+
+A) Null-safe navigation 
+
+B) Conditional assignment
+
+C) Method overloading
+
+D) Type casting
+
+Answer: A) Null-safe navigation
+
+Question 10:
+What is printed by the following code?
+
+def x = 10
+def y = 20
+println x <=> y
+
+
+A) -1 
+
+B) 0
+
+C) 1
+
+D) Error
+
+Answer: A) -1
+(The <=> operator is the spaceship operator; returns -1 if left < right, 0 if equal, 1 if left > right)
