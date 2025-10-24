@@ -1,0 +1,17 @@
+Closures and Functional Programming
+
+Topics: Defining closures, passing closures to methods
+Question:
+def greet = { name -> "Hello, $name!" }
+println greet("Oracle")
+What is printed?
+
+A) Hello, Oracle!
+
+B) Hello, name!
+
+C) greet(Oracle)
+
+D) Error
+
+Answer: A) Hello, Oracle!
