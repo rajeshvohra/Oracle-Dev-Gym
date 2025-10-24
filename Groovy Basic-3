@@ -1,0 +1,374 @@
+Variables & Types
+
+Q1: Which of the following is the correct way to declare a variable in Groovy?
+
+A) var x = 10
+
+B) def x = 10 
+
+C) int x := 10
+
+D) let x = 10
+
+Answer: B) def x = 10
+
+Q2: Which of the following types is optional in Groovy?
+
+A) int
+
+B) def 
+
+C) String
+
+D) boolean
+
+Answer: B) def (Groovy is optionally typed)
+
+Q3: What is printed?
+
+def name = "Groovy"
+println "Hello $name"
+
+
+A) Hello name
+
+B) Hello Groovy 
+
+C) "Hello $name"
+
+D) Error
+
+Answer: B) Hello Groovy
+
+Q4: What is the result of:
+
+def x = 10
+def y = 5
+println x + y * 2
+
+
+A) 30
+
+B) 20 
+
+C) 15
+
+D) 10
+
+Answer: B) 20 (operator precedence)
+
+Q5: What is printed?
+
+def x = null
+println x ?: "Default"
+
+
+A) null
+
+B) ""
+
+C) "Default" 
+
+D) Error
+
+Answer: C) "Default" (?: is the Elvis operator)
+
+Operators & Expressions
+
+Q6: What does <=> do in Groovy?
+
+A) Null-safe navigation
+
+B) Spaceship operator 
+
+C) Method chaining
+
+D) Type casting
+
+Answer: B) Spaceship operator (returns -1, 0, 1)
+
+Q7: Output:
+
+println 5 + "5"
+
+
+A) 10
+
+B) 55 
+
+C) "5"
+
+D) Error
+
+Answer: B) 55 (string concatenation)
+
+Q8: Output:
+
+println 5 * "abc"
+
+
+A) abcabcabcabcabc 
+
+B) 5abc
+
+C) abc5
+
+D) Error
+
+Answer: A) abc repeated 5 times
+
+Q9: True or False: In Groovy, == compares values, not object references. 
+
+Answer: True
+
+Q10: True or False: Groovy supports the ternary operator. 
+
+Answer: True
+
+Collections
+
+Q11: Which is NOT a Groovy collection type?
+
+A) List
+
+B) Map
+
+C) Set
+
+D) Queue 
+
+Answer: D) Queue
+
+Q12: Create a list in Groovy:
+
+A) def list = [1,2,3] 
+
+B) def list = (1,2,3)
+
+C) def list = List(1,2,3)
+
+D) def list = new ArrayList[1,2,3]
+
+Answer: A) def list = [1,2,3]
+
+Q13: Output:
+
+def nums = [1,2,3,4]
+nums.each { println it * 2 }
+
+
+A) 2 4 6 8 
+
+B) 1 2 3 4
+
+C) 1 4 9 16
+
+D) Error
+
+Answer: A) 2 4 6 8
+
+Q14: Output:
+
+def nums = [1,2,3,4]
+println nums.collect { it * 2 }
+
+
+A) [2,4,6,8] 
+
+B) [1,2,3,4]
+
+C) [1,4,9,16]
+
+D) Error
+
+Answer: A) [2,4,6,8]
+
+Q15: How do you access the 2nd element of a list lst?
+
+A) lst(2)
+
+B) lst[1] 
+
+C) lst.get(2)
+
+D) lst{2}
+
+Answer: B) lst[1] (Groovy uses zero-based indexing)
+
+Maps
+
+Q16: Output:
+
+def map = [name:"Groovy", type:"language"]
+println map.name
+
+
+A) name
+
+B) Groovy 
+
+C) [name:Groovy]
+
+D) Error
+
+Answer: B) Groovy
+
+Q17: True or False: You can access map values using both map.key and map['key']. 
+
+Answer: True
+
+Q18: Create a map in Groovy:
+
+A) [name:"John", age:30] 
+
+B) {name:"John", age:30}
+
+C) Map(name:"John", age:30)
+
+D) new Map[name:"John", age:30]
+
+Answer: A) [name:"John", age:30]
+
+Closures
+
+Q19: Define a closure:
+
+A) { println "Hello" } 
+
+B) def closure = func()
+
+C) def closure = function {}
+
+D) (x) -> println x
+
+Answer: A) { println "Hello" }
+
+Q20: Output:
+
+def greet = { name -> "Hello, $name!" }
+println greet("Oracle")
+
+
+A) Hello, Oracle! 
+
+B) Hello, name!
+
+C) greet(Oracle)
+
+D) Error
+
+Answer: A) Hello, Oracle!
+
+Q21: True or False: Closures in Groovy can access variables from their surrounding scope. ✅
+
+Answer: True
+
+Q22: How do you pass a closure to a method?
+
+A) method( { println "Hi" } ) 
+
+B) method.do( { println "Hi" } )
+
+C) method-> { println "Hi" }
+
+D) method: { println "Hi" }
+
+Answer: A) method( { println "Hi" } )
+
+String & GStrings
+
+Q23: Output:
+
+def a = "5"
+def b = 5
+println a + b
+
+
+A) 10
+
+B) 55 
+
+C) "5"
+
+D) Error
+
+Answer: B) 55
+
+Q24: True or False: Single-quoted strings in Groovy support interpolation. 
+
+Answer: False (only double-quoted strings or triple-double quoted strings support $ interpolation)
+
+Q25: What does """Hello $name""" produce?
+
+A) Multi-line GString 
+
+B) Error
+
+C) Single-line string
+
+D) Null
+
+Answer: A) Multi-line GString
+
+Null-Safety & Operators
+
+Q26: What does the ?. operator do?
+
+A) Null-safe navigation 
+
+B) Conditional assignment
+
+C) Method overloading
+
+D) Type casting
+
+Answer: A) Null-safe navigation
+
+Q27: True or False: ?. prevents a NullPointerException if the left-hand object is null. 
+
+Answer: True
+
+Q28: Output:
+
+def x = null
+println x?.toString()
+
+
+A) null 
+
+B) ""
+
+C) Error
+
+D) "null"
+
+Answer: A) null
+
+Ranges & Loops
+
+Q29: How do you create a range from 1 to 5?
+
+A) 1..5 
+
+B) [1,5]
+
+C) (1..5)
+
+D) range(1,5)
+
+Answer: A) 1..5
+
+Q30: Output:
+
+for (i in 1..3) { print i }
+
+
+A) 123 
+
+B) 1 2 3
+
+C) 12 3
+
+D) 321
+
+Answer: A) 123
