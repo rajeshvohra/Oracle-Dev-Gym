@@ -1,0 +1,19 @@
+
+Topics: Creating XML or UI structures with builders
+Question:
+def xml = new groovy.xml.MarkupBuilder()
+xml.books {
+    book(title:"Groovy in Action")
+}
+
+What does this code produce?
+
+A) <books><book title="Groovy in Action"/></books>
+
+B) [books, book]
+
+C) books{book}
+
+D) Error
+
+Answer: A) <books><book title="Groovy in Action"/></books>
