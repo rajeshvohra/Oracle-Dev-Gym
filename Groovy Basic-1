@@ -1,0 +1,18 @@
+1. Groovy Basics
+Topics: Syntax, variables, operators
+Example Question:
+def x = 10
+def y = 5
+println x + y * 2
+
+What is the output?
+
+A) 30
+
+B) 20
+
+C) 15
+
+D) 10
+
+Answer: B) 20
