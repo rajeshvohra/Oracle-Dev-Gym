@@ -1,6 +1,6 @@
 1. Groovy Basics
 Topics: Syntax, variables, operators
-Example Question:
+Question:
 def x = 10
 def y = 5
 println x + y * 2
