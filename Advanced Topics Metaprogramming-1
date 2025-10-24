@@ -1,0 +1,13 @@
+Topics: ExpandoMetaClass, method injection
+Question:
+How would you add a new method greet to all Strings in Groovy?
+
+A) String.metaClass.greet = { -> "Hi $delegate" } 
+
+B) String.addMethod("greet")
+
+C) def greet(String s) { ... }
+
+D) String.newMethod("greet")
+
+Answer: A) String.metaClass.greet = { -> "Hi $delegate" }
